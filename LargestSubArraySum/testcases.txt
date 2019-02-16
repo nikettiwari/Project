@@ -1,0 +1,66 @@
+Test case 1- 
+
+Input -  { -2, -1, -3, 4, -1, 2, 1, -5, 4 };  // when max sum is in middle of array
+
+Output -
+
+Start index: 3
+Length: 4
+Sum: 6
+Elements: 4 -1 2 1
+
+Test case 2-
+ 
+Input - { 0,-2, -1, -3, -4, -1, -2, -1, -5}; // only start point is positive element
+
+Output -
+
+Start index: 0
+Length: 1
+Sum: 0
+Elements: 0
+
+Test case 3- 
+ 
+Input - { -10,-2, -1, -3, -4, -1, -2, -1, 10};  // only end point is positive element
+
+Output -
+
+Start index: 8
+Length: 1
+Sum: 10
+Elements: 10
+
+
+Test case 4-  
+
+Input -  {1}; // only one element is there in array
+
+Output -
+
+Start index: 0
+Length: 1
+Sum: 1
+Elements: 1
+
+Test case 5- 
+
+Input - {10,-1,-2,-4,20};      // sum of all elements is max
+
+Output -
+
+Start index: 0
+Length: 5
+Sum: 23
+Elements: 10 -1 -2 -4 20
+
+Test case 6- 
+
+Input -  {10,1,2,4,20};                      // sum of all elements is max
+
+Output -
+
+Start index: 0
+Length: 5
+Sum: 37
+Elements: 10 1 2 4 20
