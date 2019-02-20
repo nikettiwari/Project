@@ -5,7 +5,7 @@ public class SubArray {
 	/**
 	 * function to find max sum from Subarray
 	 */
-	static void findMaxSumSubArray(int arr[]) {
+	 public static int findMaxSumSubArray(int arr[]) {
 		int maxSum = Integer.MIN_VALUE, currentSum = 0; // initializing maxSum variable as lowest minimum integer value 
 														// initializing current sum as 0 to calculate the sum of Subarray
 		int startPoint = 0, endPoint = 0, flag = 0; // startPoint variable is starting point of Largest Sum Contiguous
@@ -26,14 +26,14 @@ public class SubArray {
 		System.out.println("\n\nLargest Subarray is ");
 		System.out.println("Start index: " + startPoint);
 		System.out.println("Length: " + (endPoint - startPoint + 1));
-		System.out.println("Sum: " + maxSum);
 		System.out.print("Elements:");
 		for (int i = startPoint; i <= endPoint; i++)  
 			System.out.print(" " + arr[i]);
+		return maxSum;
 	}
 
 	public static void main(String[] args) {
 		int arr[] = { -2, -1, -3, 4, -1, 2, 1, -5, 4 };  // when max sum is in middle of array
-		findMaxSumSubArray(arr);
+		System.out.println("\nSum: " + findMaxSumSubArray(arr));
 	}
 }
